@@ -1,7 +1,15 @@
-import { View } from "react-native";
+import { View, FlatList } from "react-native";
+import { CATEGORIES } from "../../data/dummydata";
+import CategoryItem from "./CategoryItem";
 
 const Categories = () => {
-  return <View></View>;
+  return (
+    <FlatList
+      data={CATEGORIES}
+      keyExtractor={(category) => category.id}
+      renderItem={(category) => <CategoryItem />}
+    />
+  );
 };
 
 export default Categories;
