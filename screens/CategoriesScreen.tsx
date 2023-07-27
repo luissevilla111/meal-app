@@ -5,7 +5,7 @@ import Categories from "../components/Categories/Categories";
 const CategoriesScreen = () => {
   return (
     <View>
-      <Text>CategoriesScreen</Text>
+      {/* <Text>CategoriesScreen</Text> */}
       <Categories />
     </View>
   );

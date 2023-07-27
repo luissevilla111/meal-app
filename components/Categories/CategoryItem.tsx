@@ -1,9 +1,14 @@
 import { View, Text } from "react-native";
+import { ICategoryMeal } from "../../interfaces/meals";
 
-const CategoryItem = () => {
+type Props = {
+  children?: React.ReactNode;
+  category1: ICategoryMeal;
+};
+const CategoryItem: React.FC<Props> = ({ children, category1 }) => {
   return (
     <View>
-      <Text>Item</Text>
+      <Text>{category1.title}</Text>
     </View>
   );
 };

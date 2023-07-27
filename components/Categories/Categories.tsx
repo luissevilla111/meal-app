@@ -7,7 +7,7 @@ const Categories = () => {
     <FlatList
       data={CATEGORIES}
       keyExtractor={(category) => category.id}
-      renderItem={(category) => <CategoryItem />}
+      renderItem={({ item: category }) => <CategoryItem category1={category} />}
     />
   );
 };
