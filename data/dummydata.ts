@@ -26,6 +26,36 @@ export const CATEGORIES: ICategoryMeal[] = [
     color: "#fdfd96",
     title: "Aperitivos",
   },
+  {
+    id: "C6",
+    color: "#77dd77",
+    title: "China",
+  },
+  {
+    id: "C7",
+    color: "#84b6f4",
+    title: "Japonesa",
+  },
+  {
+    id: "C8",
+    color: "#ff6961",
+    title: "Salada",
+  },
+  {
+    id: "C9",
+    color: "#fdcae1",
+    title: "Postres",
+  },
+  {
+    id: "C10",
+    color: "#fdfd96",
+    title: "Fria",
+  },
+  {
+    id: "C11",
+    color: "#fdcae1",
+    title: "Sana",
+  },
 ];
 
 const MEALS_DUMMY: IMeal[] = [

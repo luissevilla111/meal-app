@@ -6,6 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { StyleSheet, Text, View } from "react-native";
 
 import CategoriesScreen from "./screens/CategoriesScreen";
+import MealsScreen from "./screens/MealsScree";
 
 const Stack = createStackNavigator();
 const MyStack = () => {
@@ -16,9 +17,9 @@ const MyStack = () => {
         component={CategoriesScreen}
         options={{ headerTitle: "Categorias" }}
       />
-      {/*  <Stack.Screen name="Notifications" component={NotificationsScreen} />
-      <Stack.Screen name="Profile" component={ProfileScreen} />
-      <Stack.Screen name="Settings" component={SettingsScreen} /> */}
+      <Stack.Screen name="Meals" component={MealsScreen} />
+      {/* <Stack.Screen name="Profile" component={ProfileScreen} />
+      <Stack.Screen name="Settings" component={SettingsScreen} />  */}
     </Stack.Navigator>
   );
 };
