@@ -8,7 +8,7 @@ export interface IMealIngredient {
   title: string;
   icon: string;
   quntity: number;
-  mesure: "Lts" | "Kg" | "Un";
+  mesure: "Lts" | "Kg" | "Un" | "Gr";
 }
 export interface IBenefit {
   isGlutenFree: boolean;

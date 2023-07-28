@@ -51,14 +51,14 @@ const styles = StyleSheet.create({
 
   circle: {
     position: "absolute",
-    /* top: -10,
-    right: -10, */
-    top: 0,
-    right: 0,
+    top: -10,
+    right: -10,
+    /* top: 0,
+    right: 0, */
     width: 40,
-    height: "100%",
+    height: 40,
     zIndex: -1,
 
-    /* borderRadius: 40 / 2, */
+    borderRadius: 40 / 2,
   },
 });
