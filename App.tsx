@@ -19,7 +19,7 @@ type RootStackParamList = {
 const Stack = createStackNavigator<RootStackParamList>();
 const MyStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ cardStyle: { backgroundColor: "#000" } }}>
       <Stack.Screen
         name="Categories"
         component={CategoriesScreen}
