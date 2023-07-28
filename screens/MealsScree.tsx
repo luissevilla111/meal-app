@@ -1,7 +1,12 @@
-import { View, Text } from "react-native";
+import { View, Text, FlatList } from "react-native";
 import { StackNavigationProp } from "@react-navigation/stack";
 
 import { RouteProp } from "@react-navigation/native";
+import { MEALS_DUMMY } from "../data/dummydata";
+import { useEffect, useState } from "react";
+import { IMeal } from "../interfaces/meals";
+import MealsItem from "../components/meals/MealItem";
+import MealList from "../components/meals/MealList";
 
 type RootStackParamList = {
   Meals: {
@@ -21,11 +26,20 @@ type Props = {
 
 const MealsScreen: React.FC<Props> = ({ route }) => {
   const { mealId } = route.params;
-  return (
-    <View>
-      <Text> MealId: {mealId}</Text>
-    </View>
-  );
+  //const meals = MEALS_DUMMY.filter(meal=>{})
+
+  const [meals, setMeals] = useState<IMeal[]>([]);
+
+  useEffect(() => {
+    const mealsLocal = MEALS_DUMMY.filter((meal) => {
+      const categories = meal.categories;
+
+      return categories.some((category) => category === mealId);
+    });
+    setMeals(mealsLocal);
+  }, []);
+
+  return <MealList meals={meals} />;
 };
 
 export default MealsScreen;

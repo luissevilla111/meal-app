@@ -58,7 +58,7 @@ export const CATEGORIES: ICategoryMeal[] = [
   },
 ];
 
-const MEALS_DUMMY: IMeal[] = [
+export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M1",
     tiitle: "MOLE",
