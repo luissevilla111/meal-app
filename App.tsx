@@ -8,7 +8,15 @@ import { StyleSheet, Text, View } from "react-native";
 import CategoriesScreen from "./screens/CategoriesScreen";
 import MealsScreen from "./screens/MealsScree";
 
-const Stack = createStackNavigator();
+type RootStackParamList = {
+  Meals: {
+    mealId: string;
+  };
+  Categories: {};
+  // Puedes agregar más rutas aquí según tus necesidades
+};
+
+const Stack = createStackNavigator<RootStackParamList>();
 const MyStack = () => {
   return (
     <Stack.Navigator>

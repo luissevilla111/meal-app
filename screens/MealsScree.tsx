@@ -15,11 +15,11 @@ type MealsScreenRouteProp = RouteProp<RootStackParamList, "Meals">;
 
 type Props = {
   children?: React.ReactNode;
-  navigation: StackNavigationProp<RootStackParamList, "Meals">;
+  /* navigation: StackNavigationProp<RootStackParamList, "Meals">; */
   route: MealsScreenRouteProp; // Agrega el tipo para la ruta
 };
 
-const MealsScreen: React.FC<Props> = ({ navigation, route }) => {
+const MealsScreen: React.FC<Props> = ({ route }) => {
   const { mealId } = route.params;
   return (
     <View>
