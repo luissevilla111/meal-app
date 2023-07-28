@@ -11,6 +11,7 @@ import MealsScreen from "./screens/MealsScree";
 type RootStackParamList = {
   Meals: {
     mealId: string;
+    color: string;
   };
   Categories: {};
   // Puedes agregar más rutas aquí según tus necesidades

@@ -12,6 +12,7 @@ type RootStackParamList = {
   Meals: {
     // Define la estructura de los parámetros de ruta
     mealId: string;
+    color: string;
     // Agrega más parámetros según tus necesidades
   };
 };
@@ -25,7 +26,7 @@ type Props = {
 };
 
 const MealsScreen: React.FC<Props> = ({ route }) => {
-  const { mealId } = route.params;
+  const { mealId, color } = route.params;
   //const meals = MEALS_DUMMY.filter(meal=>{})
 
   const [meals, setMeals] = useState<IMeal[]>([]);
@@ -39,7 +40,7 @@ const MealsScreen: React.FC<Props> = ({ route }) => {
     setMeals(mealsLocal);
   }, []);
 
-  return <MealList meals={meals} />;
+  return <MealList meals={meals} color={color} />;
 };
 
 export default MealsScreen;

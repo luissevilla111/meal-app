@@ -4,13 +4,14 @@ import MealsItem from "./MealItem";
 
 type Props = {
   meals: IMeal[];
+  color: string;
 };
 
-const MealList: React.FC<Props> = ({ meals }) => {
+const MealList: React.FC<Props> = ({ meals, color }) => {
   return (
     <FlatList
       data={meals}
-      renderItem={({ item: meal }) => <MealsItem meal={meal} />}
+      renderItem={({ item: meal }) => <MealsItem meal={meal} color={color} />}
     />
   );
 };

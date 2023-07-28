@@ -4,11 +4,12 @@ import { Image } from "expo-image";
 
 type Props = {
   meal: IMeal;
+  color: string;
 };
 
-const MealsItem: React.FC<Props> = ({ meal }) => {
+const MealsItem: React.FC<Props> = ({ meal, color }) => {
   return (
-    <View style={styles.mealItemContainer}>
+    <View style={{ ...styles.mealItemContainer }}>
       <View>
         <Image
           source={meal.image}
@@ -21,11 +22,15 @@ const MealsItem: React.FC<Props> = ({ meal }) => {
         <View style={styles.subDetails}>
           <View style={styles.detailContainer}>
             <Text style={styles.textDetailTag}>Dificultad :</Text>
-            <Text style={styles.textRespo}>{meal.affordability}</Text>
+            <Text style={{ ...styles.textRespo, color: color }}>
+              {meal.affordability}
+            </Text>
           </View>
           <View style={styles.detailContainer}>
             <Text style={styles.textDetailTag}>Duracion :</Text>
-            <Text style={styles.textRespo}>{meal.duration}</Text>
+            <Text style={{ ...styles.textRespo, color: color }}>
+              {meal.duration}
+            </Text>
           </View>
         </View>
       </View>
@@ -84,5 +89,6 @@ const styles = StyleSheet.create({
   textRespo: {
     color: "#fff",
     fontSize: 20,
+    fontWeight: "bold",
   },
 });

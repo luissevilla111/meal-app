@@ -14,7 +14,10 @@ const CategoryItem: React.FC<Props> = ({ children, category1 }) => {
   const navigation = useNavigation<StackNavigationProp<any>>();
 
   const navigateToMeals = () => {
-    navigation.navigate("Meals", { mealId: category1.id });
+    navigation.navigate("Meals", {
+      mealId: category1.id,
+      color: category1.color,
+    });
   };
 
   return (
