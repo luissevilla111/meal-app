@@ -71,6 +71,7 @@ export const MEALS_DUMMY: IMeal[] = [
     ingredients: [
       { title: "Chile Poblano", icon: "", quntity: 4, mesure: "Un" },
     ],
+    isFavorite: true,
     steps: ".................",
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",
@@ -87,6 +88,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "Tortilla", icon: "", quntity: 5, mesure: "Un" },
       { title: "Carne de res", icon: "", quntity: 1, mesure: "Kg" },
     ],
+    isFavorite: false,
     steps: "zzzzzzzzzzz",
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",
@@ -104,6 +106,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "queso", icon: "", quntity: 0.5, mesure: "Kg" },
       { title: "pierna de pollo", icon: "", quntity: 2, mesure: "Un" },
     ],
+    isFavorite: true,
     steps: "YYYYYYYYYYYYYYYYYYYYYYYY",
     video: "",
   },
@@ -121,6 +124,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "carne molida", icon: "", quntity: 0.2, mesure: "Gr" },
       { title: "Pan", icon: "", quntity: 2, mesure: "Un" },
     ],
+    isFavorite: true,
     steps: "YYYYYYYYYYYYYYYYYYYYYYYY",
     video: "",
   },
@@ -136,6 +140,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "salchichas", icon: "", quntity: 2, mesure: "Un" },
       { title: "Pan", icon: "", quntity: 1, mesure: "Un" },
     ],
+    isFavorite: false,
     steps: "djkajdaksd",
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",
@@ -155,6 +160,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "leche", icon: "", quntity: 3, mesure: "Lts" },
       { title: "Fresas", icon: "", quntity: 5, mesure: "Un" },
     ],
+    isFavorite: true,
     steps: "fsodifsdf.....",
     video: "",
   },
@@ -173,6 +179,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "ingredient2", icon: "", quntity: 2, mesure: "Un" },
       { title: "ingredient3", icon: "", quntity: 3, mesure: "Lts" },
     ],
+    isFavorite: false,
     steps: "?????????????",
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",

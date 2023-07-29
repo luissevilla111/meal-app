@@ -26,4 +26,5 @@ export interface IMeal {
   categories: string[];
   ingredients: IMealIngredient[];
   benefits: IBenefit[];
+  isFavorite: boolean;
 }

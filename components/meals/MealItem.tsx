@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import { IMeal } from "../../interfaces/meals";
 import { Image } from "expo-image";
+import FavoriteMealIcon from "../UI/FavoriteMealIcon";
 
 type Props = {
   meal: IMeal;
@@ -32,6 +33,9 @@ const MealsItem: React.FC<Props> = ({ meal, color }) => {
               {meal.duration}
             </Text>
           </View>
+        </View>
+        <View style={styles.iconContainer}>
+          <FavoriteMealIcon isFavorite={meal.isFavorite} />
         </View>
       </View>
     </View>
@@ -74,6 +78,7 @@ const styles = StyleSheet.create({
 
   details: {
     flex: 1,
+    position: "relative",
     /* backgroundColor: "#ccc", */
   },
 
@@ -90,5 +95,14 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 20,
     fontWeight: "bold",
+  },
+
+  iconContainer: {
+    borderTopLeftRadius: 32,
+    padding: 16,
+    position: "absolute",
+    right: 0,
+    bottom: 0,
+    backgroundColor: "#fff",
   },
 });
