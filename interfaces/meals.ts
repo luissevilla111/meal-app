@@ -14,13 +14,14 @@ export interface IBenefit {
   isGlutenFree: boolean;
   isVegan: boolean;
 }
+export type RankAffordability = "CHALLENGING" | "HARD" | "MEDIUM" | "EASY";
 
 export interface IMeal {
   id: string;
   tiitle: string;
   steps: string;
   duration: string;
-  affordability: "CHALLENGING" | "HARD" | "MEDIUM" | "EASY";
+  affordability: RankAffordability;
   image: string;
   video: string;
   categories: string[];

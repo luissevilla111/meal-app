@@ -2,6 +2,8 @@ import { View, Text, StyleSheet } from "react-native";
 import { IMeal } from "../../interfaces/meals";
 import { Image } from "expo-image";
 import FavoriteMealIcon from "../UI/FavoriteMealIcon";
+import { FontAwesome } from "@expo/vector-icons";
+import DifficultyRank from "../UI/DifficultyRank";
 
 type Props = {
   meal: IMeal;
@@ -19,23 +21,25 @@ const MealsItem: React.FC<Props> = ({ meal, color }) => {
         ></Image>
       </View>
       <View style={styles.details}>
-        <Text style={styles.title}>{meal.tiitle}</Text>
+        <Text style={{ ...styles.title, color: color }}>{meal.tiitle}</Text>
         <View style={styles.subDetails}>
           <View style={styles.detailContainer}>
-            <Text style={styles.textDetailTag}>Dificultad :</Text>
-            <Text style={{ ...styles.textRespo, color: color }}>
+            <Text style={styles.textDetailTag}>Nivel</Text>
+            {/* <Text style={{ ...styles.textRespo, color: color }}>
               {meal.affordability}
-            </Text>
+            </Text> */}
+            <DifficultyRank affordability={meal.affordability} color={color} />
           </View>
           <View style={styles.detailContainer}>
-            <Text style={styles.textDetailTag}>Duracion :</Text>
-            <Text style={{ ...styles.textRespo, color: color }}>
-              {meal.duration}
-            </Text>
+            <Text style={styles.textDetailTag}>Duracion</Text>
+            <Text style={styles.textRespo}>{meal.duration} Min</Text>
           </View>
         </View>
-        <View style={styles.iconContainer}>
+        <View style={styles.iconContainerStar}>
           <FavoriteMealIcon isFavorite={meal.isFavorite} />
+        </View>
+        <View style={styles.iconContainerCalendar}>
+          <FontAwesome name="calendar" size={32} color="black" />
         </View>
       </View>
     </View>
@@ -71,14 +75,19 @@ const styles = StyleSheet.create({
   },
 
   detailContainer: {
-    flexDirection: "row",
-    gap: 8,
+    /* flexDirection: "row", */
+    flex: 1,
+    rowGap: 8,
     alignItems: "center",
+    /* width: "100%", */
+    /* borderWidth: 1,
+    borderColor: "#ccc", */
   },
 
   details: {
     flex: 1,
     position: "relative",
+
     /* backgroundColor: "#ccc", */
   },
 
@@ -86,6 +95,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     paddingTop: 8,
+    width: "100%",
   },
   textDetailTag: {
     fontSize: 16,
@@ -97,12 +107,20 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 
-  iconContainer: {
+  iconContainerStar: {
     borderTopLeftRadius: 32,
     padding: 16,
     position: "absolute",
     right: 0,
     bottom: 0,
     backgroundColor: "#fff",
+  },
+  iconContainerCalendar: {
+    position: "absolute",
+    left: 0,
+    bottom: 0,
+    backgroundColor: "#fff",
+    padding: 16,
+    borderTopRightRadius: 32,
   },
 });
