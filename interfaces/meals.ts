@@ -15,13 +15,14 @@ export interface IBenefit {
   isVegan: boolean;
 }
 export type RankAffordability = "CHALLENGING" | "HARD" | "MEDIUM" | "EASY";
+export type RankAffordabilityNumber = 1 | 2 | 3 | 4 | 5;
 
 export interface IMeal {
   id: string;
   tiitle: string;
   steps: string;
   duration: string;
-  affordability: RankAffordability;
+  affordability: RankAffordabilityNumber;
   image: string;
   video: string;
   categories: string[];

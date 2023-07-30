@@ -62,7 +62,7 @@ export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M1",
     tiitle: "MOLE",
-    affordability: "HARD",
+    affordability: 4,
     benefits: [],
     categories: ["C1", "C4"],
     duration: "60",
@@ -79,7 +79,7 @@ export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M2",
     tiitle: "TACOS",
-    affordability: "EASY",
+    affordability: 1,
     benefits: [],
     categories: ["C1", "C3"],
     duration: "10",
@@ -96,7 +96,7 @@ export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M3",
     tiitle: "Dedos de queso",
-    affordability: "MEDIUM",
+    affordability: 3,
     benefits: [],
     categories: ["C5"],
     duration: "30",
@@ -113,7 +113,7 @@ export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M4",
     tiitle: "Hamburguesa",
-    affordability: "EASY",
+    affordability: 2,
     benefits: [],
     categories: ["C2", "C3"],
     duration: "40",
@@ -131,7 +131,7 @@ export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M5",
     tiitle: "HOT-DOG",
-    affordability: "EASY",
+    affordability: 1,
     benefits: [],
     categories: ["C2", "C3"],
     duration: "40",
@@ -149,7 +149,7 @@ export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M6",
     tiitle: "Pastel de tres leches",
-    affordability: "CHALLENGING",
+    affordability: 5,
     benefits: [],
     categories: ["C9"],
     duration: "200",
@@ -168,7 +168,7 @@ export const MEALS_DUMMY: IMeal[] = [
   {
     id: "M7",
     tiitle: "Example Meal",
-    affordability: "HARD",
+    affordability: 4,
     benefits: [],
     categories: ["C9", "C1", "C3", "C7"],
     duration: "200",
