@@ -20,7 +20,7 @@ export type RankAffordabilityNumber = 1 | 2 | 3 | 4 | 5;
 export interface IMeal {
   id: string;
   tiitle: string;
-  steps: string;
+  steps: string[];
   duration: string;
   affordability: RankAffordabilityNumber;
   image: string;

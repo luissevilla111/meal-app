@@ -1,9 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { IMeal } from "../../interfaces/meals";
 import { Image } from "expo-image";
 import FavoriteMealIcon from "../UI/FavoriteMealIcon";
 import { FontAwesome } from "@expo/vector-icons";
 import DifficultyRank from "../UI/DifficultyRank";
+import { useNavigation } from "@react-navigation/native";
+import { StackNavigationProp } from "@react-navigation/stack";
 
 type Props = {
   meal: IMeal;
@@ -11,8 +13,19 @@ type Props = {
 };
 
 const MealsItem: React.FC<Props> = ({ meal, color }) => {
+  const navigation = useNavigation<StackNavigationProp<any>>();
+
+  const navigateToMealDetail = () => {
+    navigation.navigate("Details", {
+      mealId: meal.id,
+    });
+  };
+
   return (
-    <View style={{ ...styles.mealItemContainer }}>
+    <TouchableOpacity
+      style={{ ...styles.mealItemContainer }}
+      onPress={navigateToMealDetail}
+    >
       <View>
         <Image
           source={meal.image}
@@ -42,7 +55,7 @@ const MealsItem: React.FC<Props> = ({ meal, color }) => {
           <FontAwesome name="calendar" size={32} color="black" />
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

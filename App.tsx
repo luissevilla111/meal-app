@@ -7,6 +7,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 import CategoriesScreen from "./screens/CategoriesScreen";
 import MealsScreen from "./screens/MealsScree";
+import MealsDetailsScreen from "./screens/MealDetailsScreen";
 
 type RootStackParamList = {
   Meals: {
@@ -14,6 +15,9 @@ type RootStackParamList = {
     color: string;
   };
   Categories: {};
+  Details: {
+    mealId: string;
+  };
   // Puedes agregar más rutas aquí según tus necesidades
 };
 
@@ -27,8 +31,8 @@ const MyStack = () => {
         options={{ headerTitle: "Categorias" }}
       />
       <Stack.Screen name="Meals" component={MealsScreen} />
-      {/* <Stack.Screen name="Profile" component={ProfileScreen} />
-      <Stack.Screen name="Settings" component={SettingsScreen} />  */}
+      <Stack.Screen name="Details" component={MealsDetailsScreen} />
+      {/*<Stack.Screen name="Settings" component={SettingsScreen} />  */}
     </Stack.Navigator>
   );
 };

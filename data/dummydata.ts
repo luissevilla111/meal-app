@@ -72,7 +72,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "Chile Poblano", icon: "", quntity: 4, mesure: "Un" },
     ],
     isFavorite: true,
-    steps: ".................",
+    steps: ["lsdasd", "dsasd", "dasdasd"],
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",
   },
@@ -89,7 +89,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "Carne de res", icon: "", quntity: 1, mesure: "Kg" },
     ],
     isFavorite: false,
-    steps: "zzzzzzzzzzz",
+    steps: ["lsdasd", "dsasd", "dasdasd"],
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",
   },
@@ -107,7 +107,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "pierna de pollo", icon: "", quntity: 2, mesure: "Un" },
     ],
     isFavorite: true,
-    steps: "YYYYYYYYYYYYYYYYYYYYYYYY",
+    steps: ["lsdasd", "dsasd", "dasdasd"],
     video: "",
   },
   {
@@ -125,7 +125,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "Pan", icon: "", quntity: 2, mesure: "Un" },
     ],
     isFavorite: true,
-    steps: "YYYYYYYYYYYYYYYYYYYYYYYY",
+    steps: ["lsdasd", "dsasd", "dasdasd"],
     video: "",
   },
   {
@@ -141,7 +141,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "Pan", icon: "", quntity: 1, mesure: "Un" },
     ],
     isFavorite: false,
-    steps: "djkajdaksd",
+    steps: ["lsdasd", "dsasd", "dasdasd"],
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",
   },
@@ -161,7 +161,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "Fresas", icon: "", quntity: 5, mesure: "Un" },
     ],
     isFavorite: true,
-    steps: "fsodifsdf.....",
+    steps: ["lsdasd", "dsasd", "dasdasd"],
     video: "",
   },
 
@@ -180,7 +180,7 @@ export const MEALS_DUMMY: IMeal[] = [
       { title: "ingredient3", icon: "", quntity: 3, mesure: "Lts" },
     ],
     isFavorite: false,
-    steps: "?????????????",
+    steps: ["lsdasd", "dsasd", "dasdasd"],
     video:
       "https://www.eluniversal.com.mx/resizer/P2WeOYmFsEeBn-puypa2Wdplqgs=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/M7BQKUZB45F5RF4D6YY2F2XDSY.jpg",
   },
