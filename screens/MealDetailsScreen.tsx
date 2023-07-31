@@ -30,7 +30,7 @@ const MealsDetailsScreen: React.FC<Props> = ({ route }) => {
   }
 
   return (
-    <ScrollView>
+    <ScrollView style={styles.mealDetailContainer}>
       <View style={styles.imageContainer}>
         <Image
           source={mealSelected.image}
@@ -40,7 +40,8 @@ const MealsDetailsScreen: React.FC<Props> = ({ route }) => {
       </View>
       <Text style={styles.title}>{mealSelected.tiitle}</Text>
       <View>
-        <CustomListMeal list={mealSelected.steps} />
+        <CustomListMeal list={mealSelected.steps} title="Ingredientes" />
+        <CustomListMeal list={mealSelected.steps} title="Pasos" />
       </View>
     </ScrollView>
   );
@@ -53,6 +54,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
+  mealDetailContainer: {
+    marginBottom: 64,
+  },
+
   imageContainer: {
     width: "100%",
     borderWidth: 1,
@@ -63,10 +68,10 @@ const styles = StyleSheet.create({
     height: 200,
   },
   title: {
-    textAlign:'center',
+    textAlign: "center",
     color: "white",
     fontSize: 32,
-    fontWeight:'bold',
-    marginTop:16
+    fontWeight: "bold",
+    marginTop: 16,
   },
 });
